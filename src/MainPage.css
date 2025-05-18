@@ -1,0 +1,119 @@
+  .App {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 23px;
+    padding: 65px;
+  }
+  
+
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+
+  .card {
+    background-color: #ece8efa1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, max-height 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    font-size: 14px;
+    justify-content: flex-start;
+    height: 100%;
+    max-height: 248px;
+    width: 100%;
+    max-width: 220px;
+  }
+
+  
+  .card:hover {
+    transform: scale(1.03);
+    max-height: 300px;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 6px;
+  }
+  
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .card-name {
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  
+  .card-desc {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
+    font-size: 13px;
+    color: #444;
+    margin: 0;
+  }
+  
+  .card:hover .card-desc {
+    max-height: 100px;
+    opacity: 1;
+    margin: 4px 0;
+  }
+  
+  .card-price {
+    font-weight: bold;
+    color: #28233a;
+    margin: 4px 0;
+  }
+  
+  .card button {
+    padding: 5px 12px;
+    background-color: #83688b;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .card button:hover {
+    background-color: #4b36678b;
+  }
+  
